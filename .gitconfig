@@ -1,17 +1,17 @@
 [alias]
-	st = status -s
-	df = diff
-	dc = diff --cached
-	rb = rebase
-	me = merge
-	cp = cherry-pick
-	ro = rebase --onto
-	co = checkout
+    st = status -s
+    df = diff
+    dc = diff --cached
+    rb = rebase
+    me = merge
+    cp = cherry-pick
+    ro = rebase --onto
+    co = checkout
     lg = log --graph --pretty=format:'%C(reverse white)%h%Creset%C(bold blue)%d%Creset %C(normal)%s %C(green)(%cr) %C(bold black)%an%Creset' --abbrev-commit --date=relative
-	cm = commit -m
-	br = branch
+    cm = commit -m
+    br = branch
 [push]
-	default = simple
+    default = simple
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
+    excludesfile = ~/.gitignore
+    editor = vim
