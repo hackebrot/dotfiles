@@ -21,3 +21,6 @@ fi
 if [[ ! -e ~/git-prompt.sh ]]; then
   curl -o ~/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
+
+# vim
+brew install vim
