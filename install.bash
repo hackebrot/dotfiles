@@ -24,3 +24,6 @@ fi
 
 # vim
 brew install vim
+
+# vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
