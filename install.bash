@@ -27,3 +27,8 @@ brew install vim
 
 # vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# create vim directories
+mkdir -p ~/.vim/backup/
+mkdir -p ~/.vim/swap/
+mkdir -p ~/.vim/undo/
