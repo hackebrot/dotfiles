@@ -33,5 +33,9 @@ mkdir -p ~/.vim/backup/
 mkdir -p ~/.vim/swap/
 mkdir -p ~/.vim/undo/
 
+# create project dir
+HACKEBROT=~/hackebrot/
+mkdir -p $HACKEBROT
+
 # clone vimfiles repo
-git clone https://github.com/hackebrot/vimfiles.git ~/.vim/github
+git clone https://github.com/hackebrot/vimfiles.git $HACKEBROT/vimfiles
