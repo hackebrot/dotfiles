@@ -5,7 +5,7 @@ set -e # Exit if an error occurs
 set -u # Exit for an undefined variable
 
 # homebrew
-if [[ $(which -s brewz) != 0 ]]; then
+if ! hash brew 2>/dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
