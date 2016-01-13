@@ -23,7 +23,7 @@ if [[ ! -e ~/git-prompt.sh ]]; then
 fi
 
 # vim
-brew install vim
+brew install vim --with-override-system-vim
 
 # vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
