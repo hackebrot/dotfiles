@@ -41,7 +41,7 @@ mkdir -p $HACKEBROT
 git clone https://github.com/hackebrot/vimfiles.git $HACKEBROT/vimfiles
 
 # create a symlink to make vim find the rc
-ls -s $HACKEBROT/vimfiles/vimrc ~/.vimrc
+ln -s $HACKEBROT/vimfiles/vimrc ~/.vimrc
 
 # install vim plugins
 vim +PluginInstall +qall
