@@ -45,3 +45,6 @@ ln -s $HACKEBROT/vimfiles/vimrc ~/.vimrc
 
 # install vim plugins
 vim +PluginInstall +qall
+
+# install python
+brew install python3
