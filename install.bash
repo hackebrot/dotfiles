@@ -48,3 +48,7 @@ vim +PluginInstall +qall
 
 # install python
 brew install python3
+
+# install global python deps
+pip3 install virtualenvwrapper
+pip3 install flake8
