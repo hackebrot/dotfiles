@@ -5,7 +5,7 @@ export LANG=en_US.UTF-8
 # git
 source ~/git-completion.bash
 source ~/git-prompt.sh
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='[\u@\h \[\e[1;31m\]\W\[\e[1;36m\]$(__git_ps1 " (%s)")\[\e[0m\]]\$ '
 
 # aliases
 source ~/.bash_aliases
