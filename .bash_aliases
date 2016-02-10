@@ -3,6 +3,7 @@ shopt -s expand_aliases
 
 # Open changed files in vim
 alias vimdf="git diff --name-only | uniq | xargs -o vim -p"
+alias vimdc="git diff --cached --name-only | uniq | xargs -o vim -p"
 
 # Helpers to create virtual envs for different Python versions
 alias mkv3='mkvirtualenv -p $(which python3) -a ${PWD} ${PWD##*/}'
