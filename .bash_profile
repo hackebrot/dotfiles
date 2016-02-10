@@ -2,6 +2,9 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# editor
+export EDITOR=vim
+
 # git
 source ~/git-completion.bash
 source ~/git-prompt.sh
