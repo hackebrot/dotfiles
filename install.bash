@@ -22,6 +22,9 @@ if [[ ! -e ~/git-prompt.sh ]]; then
   curl -o ~/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 fi
 
+# silver searcher
+brew install ag
+
 # vim
 brew install vim --with-override-system-vim --with-python3
 
