@@ -6,9 +6,12 @@ export LANG=en_US.UTF-8
 export EDITOR=vim
 
 # git
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
 source ~/git-completion.bash
 source ~/git-prompt.sh
-PS1='[\u@\h \[\e[1;31m\]\W\[\e[1;36m\]$(__git_ps1 " (%s)")\[\e[0m\]]\$ '
+
+source ~/.bash_prompt
 
 # aliases
 source ~/.bash_aliases
