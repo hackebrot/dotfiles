@@ -68,13 +68,13 @@ if tput setaf 1 &> /dev/null; then
 	reset=$(tput sgr0);
 
     # Colors from https://github.com/mikker/seoul256-iTerm
-	black=$(tput setaf 0);
-	blue=$(tput setaf 153);
-	cyan=$(tput setaf 116);
+	black=$(tput setaf 237);
+	blue=$(tput setaf 110);
+	cyan=$(tput setaf 109);
 	green=$(tput setaf 108);
-	orange=$(tput setaf 217);
+	orange=$(tput setaf 179);
 	purple=$(tput setaf 125);
-	red=$(tput setaf 174);
+	red=$(tput setaf 168);
 	violet=$(tput setaf 61);
 	white=$(tput setaf 254);
 	yellow=$(tput setaf 222);
