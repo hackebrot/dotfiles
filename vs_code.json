@@ -1,0 +1,58 @@
+{
+    "editor.cursorBlinking": "blink",
+    "editor.cursorStyle": "line",
+    "editor.fontFamily": "Fira Mono",
+    "editor.fontSize": 12,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.openEditors.visible": 0,
+    "files.exclude": {
+        "**/*.egg": true,
+        "**/*.egg-info": true,
+        "**/*.egg-info/": true,
+        "**/*py[cod]": true,
+        "**/.Python": true,
+        "**/.cache": true,
+        "**/.eggs": true,
+        "**/.tox": true,
+        "**/__pycache__": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/env": true,
+        "**/sdist/": true
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "vim.easymotion": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "k"
+            ]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "after": [],
+            "before": [
+                "leader",
+                "w"
+            ],
+            "commands": [
+                {
+                    "args": [],
+                    "command": "workbench.action.files.save"
+                }
+            ]
+        }
+    ],
+    "vim.useCtrlKeys": true,
+    "window.reopenFolders": "none",
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.statusBar.visible": false
+}
