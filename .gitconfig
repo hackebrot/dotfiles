@@ -1,17 +1,35 @@
 [alias]
-    st = status -s
-    df = diff
-    dc = diff --cached
-    rb = rebase
-    me = merge
-    cp = cherry-pick
-    ro = rebase --onto
-    co = checkout
-    lg = log --graph --pretty=format:'%C(reverse white)%h%Creset%C(bold blue)%d%Creset %C(normal)%s %C(green)(%cr) %C(bold black)%an%Creset' --abbrev-commit --date=relative
-    cm = commit -m
+    aa = add -A
+    an = !git add $(git ls-files -o --exclude-standard)
+    ap = add -p
+    au = add -u
     br = branch
+    ce = commit --amend -m
+    cf = commit --amend --no-edit
+    cl = config --global --list
+    cm = commit -m
+    cn = clean -n
+    co = checkout
+    cp = cherry-pick
+    dc = diff --cached
+    df = diff
+    la = log --graph --all --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(normal)%s %C(green)(%cr) %C(reset)%an%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%C(yellow)%h%Creset%C(blue)%d%Creset %C(normal)%s %C(green)(%cr) %C(reset)%an%Creset' --abbrev-commit --date=relative
+    me = merge
+    oo = fetch -p origin
+    rb = rebase
+    re = reset
+    rh = reset --hard
+    ri = rebase -i
+    ro = rebase --onto
+    sh = show
+    st = status -s
+    uu = fetch -p upstream
 [push]
     default = simple
 [core]
     excludesfile = ~/.gitignore
     editor = vim
+[credential]
+    helper = osxkeychain
+
