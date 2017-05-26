@@ -15,3 +15,7 @@ alias mkv2='mkvirtualenv -p $(which python) -a ${PWD} ${PWD##*/}'
 
 # misc
 alias weather='curl wttr.in/Berlin'
+
+replaceall () {
+    ag -w "$1" -l -0 | xargs -0 -n 1 sed -i '' -e "s/$1/$2/g"
+}
