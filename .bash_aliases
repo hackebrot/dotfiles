@@ -9,6 +9,11 @@ alias vimdc="git diff --cached --name-only | uniq | xargs -o vim -p"
 alias nvimdf="git diff --name-only | uniq | xargs -o nvim -p"
 alias nvimdc="git diff --cached --name-only | uniq | xargs -o nvim -p"
 
+# Helper to format source code to rtf
+alias pygvimp="pygmentize -g -f rtf -O style=bw -l python | pbcopy"
+alias pygvimj="pygmentize -g -f rtf -O style=bw -l json | pbcopy"
+alias pygvimb="pygmentize -g -f rtf -O style=bw -l bash | pbcopy"
+
 # Helpers to create virtual envs for different Python versions
 alias mkv3='mkvirtualenv -p $(which python3) -a ${PWD} ${PWD##*/}'
 alias mkv2='mkvirtualenv -p $(which python) -a ${PWD} ${PWD##*/}'
