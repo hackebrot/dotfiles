@@ -3,6 +3,7 @@
     "editor.cursorStyle": "line",
     "editor.fontFamily": "Fira Mono",
     "editor.fontSize": 12,
+    "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
     "explorer.openEditors.visible": 0,
     "files.exclude": {
@@ -18,10 +19,13 @@
         "**/build": true,
         "**/dist": true,
         "**/env": true,
-        "**/sdist/": true
+        "**/sdist/": true,
+        "coverage.out": true,
+        "vendor/*/": true
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.cursorBlinking": true,
     "vim.easymotion": true,
     "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
@@ -53,6 +57,10 @@
     ],
     "vim.useCtrlKeys": true,
     "window.reopenFolders": "none",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Material Night",
     "workbench.editor.tabCloseButton": "off",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.visible": false
 }
