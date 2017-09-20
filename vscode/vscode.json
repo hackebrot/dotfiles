@@ -1,7 +1,9 @@
 {
     "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "line",
-    "editor.fontFamily": "Fira Mono",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontLigatures": true,
     "editor.fontSize": 12,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
