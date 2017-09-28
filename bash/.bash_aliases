@@ -24,3 +24,7 @@ alias weather='curl wttr.in/Berlin'
 replaceall () {
     ag -w "$1" -l -0 | xargs -0 -n 1 sed -i '' -e "s/$1/$2/g"
 }
+
+tc () {
+    turtle "$1" | jq -j ".char" | pbcopy
+}
