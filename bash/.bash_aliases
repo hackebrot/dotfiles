@@ -18,6 +18,10 @@ alias pygvimb="pygmentize -g -f rtf -O style=bw -l bash | pbcopy"
 alias mkv3='mkvirtualenv -p $(which python3) -a ${PWD} ${PWD##*/}'
 alias mkv2='mkvirtualenv -p $(which python) -a ${PWD} ${PWD##*/}'
 
+# Update commands
+alias bb='brew update && brew upgrade'
+alias nn='nvim +PlugUpdate +qall'
+
 # misc
 alias weather='curl wttr.in/Berlin'
 
@@ -28,3 +32,4 @@ replaceall () {
 tc () {
     turtle "$1" | jq -j ".char" | pbcopy
 }
+
