@@ -23,7 +23,8 @@
         "**/env": true,
         "**/sdist/": true,
         "coverage.out": true,
-        "vendor/*/": true
+        "vendor/*/": true,
+        "public/": true
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
