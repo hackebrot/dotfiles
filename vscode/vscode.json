@@ -62,7 +62,7 @@
     "vim.useCtrlKeys": true,
     "window.reopenFolders": "none",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Material Night",
+    "workbench.colorTheme": "An Old Hope Light",
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
