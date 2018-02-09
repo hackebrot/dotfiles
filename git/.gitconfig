@@ -29,7 +29,7 @@
     default = simple
 [core]
     excludesfile = ~/.gitignore
-    editor = vim
+    editor = nvim
 [credential]
     helper = osxkeychain
 
