@@ -1,10 +1,6 @@
 # Explicitly enable alias expansion in this file
 shopt -s expand_aliases
 
-# Open changed files in vim
-alias vimdf="git diff --name-only | uniq | xargs -o vim -p"
-alias vimdc="git diff --cached --name-only | uniq | xargs -o vim -p"
-
 # Open changed files in nvim
 alias nvimdf="git diff --name-only | uniq | xargs -o nvim -p"
 alias nvimdc="git diff --cached --name-only | uniq | xargs -o nvim -p"
