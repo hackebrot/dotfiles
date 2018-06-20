@@ -3,12 +3,13 @@
     "editor.cursorStyle": "line",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "terminal.integrated.fontLigatures": true,
     "editor.fontSize": 12,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "type",
+    "extensions.ignoreRecommendations": false,
+    "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/*.egg": true,
         "**/*.egg-info": true,
@@ -24,12 +25,11 @@
         "**/env": true,
         "**/sdist/": true,
         "coverage.out": true,
-        "vendor/*/": true,
-        "public/": true
+        "public/": true,
+        "vendor/*/": true
     },
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "gitlens.advanced.telemetry.enabled": false,
     "terminal.integrated.cursorBlinking": true,
     "vim.easymotion": true,
     "vim.hlsearch": true,
@@ -45,23 +45,7 @@
         }
     ],
     "vim.leader": "<space>",
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "after": [],
-            "before": [
-                "leader",
-                "w"
-            ],
-            "commands": [
-                {
-                    "args": [],
-                    "command": "workbench.action.files.save"
-                }
-            ]
-        }
-    ],
     "vim.useCtrlKeys": true,
-    "window.reopenFolders": "none",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Ayu Light",
     "workbench.editor.tabCloseButton": "off",
