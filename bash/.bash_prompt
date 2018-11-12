@@ -109,13 +109,13 @@ PS1="\[\033]0;\W\007\]";
 
 #PS1+="\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
-PS1+="\[${black}\] at ";
+PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
-PS1+="\[${black}\] in ";
+PS1+="\[${white}\] in ";
 PS1+="\[${magenta}\]\w"; # working directory
-PS1+="\$(__git_ps1 \"${black} on ${orange}%s\")";
+PS1+="\$(__git_ps1 \"${white} on ${orange}%s\")";
 PS1+="\n";
-PS1+="\[${black}\]\$ \[${reset}\]"; # `$` (and reset color)
+PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
 PS2="\[${orange}\]→ \[${reset}\]";
