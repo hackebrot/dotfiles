@@ -10,6 +10,7 @@
     "explorer.sortOrder": "type",
     "extensions.ignoreRecommendations": false,
     "files.autoSave": "onFocusChange",
+    "python.linting.enabled": false,
     "files.exclude": {
         "**/*.egg": true,
         "**/*.egg-info": true,
@@ -47,9 +48,11 @@
     "vim.leader": "<space>",
     "vim.useCtrlKeys": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Ayu Light",
+    "workbench.colorTheme": "Night Owl",
+    "bracketPairColorizer.forceIterationColorCycle": true,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false
 }
