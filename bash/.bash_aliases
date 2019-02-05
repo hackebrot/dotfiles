@@ -17,6 +17,7 @@ alias mkv2='mkvirtualenv -p $(which python) -a ${PWD} ${PWD##*/}'
 # pyenv helpers
 alias pyv3='pyenv virtualenv 3.7.1 ${PWD##*/}'
 alias pyv2='pyenv virtualenv 2.7.14 ${PWD##*/}'
+alias pyva='pyenv activate ${PWD##*/}'
 
 # Update commands
 alias bb='brew update && brew upgrade'
