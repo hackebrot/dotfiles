@@ -14,6 +14,10 @@ alias pygvimb="pygmentize -g -f rtf -O style=bw -l bash | pbcopy"
 alias mkv3='mkvirtualenv -p $(which python3) -a ${PWD} ${PWD##*/}'
 alias mkv2='mkvirtualenv -p $(which python) -a ${PWD} ${PWD##*/}'
 
+# pyenv helpers
+alias pyv3='pyenv virtualenv 3.7.1 ${PWD##*/}'
+alias pyv2='pyenv virtualenv 2.7.14 ${PWD##*/}'
+
 # Update commands
 alias bb='brew update && brew upgrade'
 alias nn='nvim +PlugUpdate +qall'
