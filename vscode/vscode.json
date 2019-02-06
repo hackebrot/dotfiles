@@ -1,16 +1,20 @@
 {
+    "bracketPairColorizer.forceIterationColorCycle": true,
+    "breadcrumbs.enabled": false,
     "editor.cursorBlinking": "blink",
-    "editor.cursorStyle": "line",
+    "editor.cursorStyle": "block",
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 12,
+    "editor.fontWeight": "500",
+    "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
     "editor.scrollBeyondLastLine": false,
     "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "type",
     "extensions.ignoreRecommendations": false,
     "files.autoSave": "onFocusChange",
-    "python.linting.enabled": false,
     "files.exclude": {
         "**/*.egg": true,
         "**/*.egg-info": true,
@@ -29,11 +33,13 @@
         "public/": true,
         "vendor/*/": true
     },
+    "python.linting.enabled": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorBlinking": true,
     "vim.easymotion": true,
     "vim.hlsearch": true,
+    "vim.incsearch": true,
     "vim.insertModeKeyBindings": [
         {
             "after": [
@@ -47,12 +53,9 @@
     ],
     "vim.leader": "<space>",
     "vim.useCtrlKeys": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Night Owl",
-    "bracketPairColorizer.forceIterationColorCycle": true,
     "workbench.editor.tabCloseButton": "off",
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": false,
-    "breadcrumbs.enabled": false
+    "workbench.statusBar.visible": false
 }
