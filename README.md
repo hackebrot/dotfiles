@@ -1,3 +1,3 @@
 # dotfiles
 
-My config files for git and alike
+My preferences for bash, git, vscode and stuff 🦊
