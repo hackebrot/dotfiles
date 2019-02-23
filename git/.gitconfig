@@ -24,6 +24,7 @@
     ro = rebase --onto
     sh = show
     st = status -s
+    ty = blame
     uu = fetch -p upstream
 [push]
     default = simple
