@@ -1,3 +1,4 @@
 # dotfiles
 
-My preferences for bash, git, vscode and stuff 🦊
+My configuration files for git, zsh, bash, vscode etc. 🦊
+
