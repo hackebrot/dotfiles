@@ -1,61 +1,30 @@
 {
-    "bracketPairColorizer.forceIterationColorCycle": true,
-    "breadcrumbs.enabled": false,
     "editor.cursorBlinking": "blink",
     "editor.cursorStyle": "block",
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true,
-    "editor.fontSize": 12,
-    "editor.fontWeight": "500",
+    "editor.fontSize": 13,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": false,
     "editor.scrollBeyondLastLine": false,
-    "explorer.openEditors.visible": 0,
     "explorer.sortOrder": "type",
-    "extensions.ignoreRecommendations": false,
+    "extensions.ignoreRecommendations": true,
     "files.autoSave": "onFocusChange",
     "files.exclude": {
-        "**/*.egg": true,
-        "**/*.egg-info": true,
-        "**/*.egg-info/": true,
         "**/*py[cod]": true,
-        "**/.Python": true,
-        "**/.cache": true,
-        "**/.eggs": true,
-        "**/.tox": true,
+        "**/.mypy_cache": true,
+        "**/.vscode": true,
         "**/__pycache__": true,
-        "**/build": true,
-        "**/dist": true,
-        "**/env": true,
-        "**/sdist/": true,
-        "coverage.out": true,
-        "public/": true,
-        "vendor/*/": true
+        "**/venv": true
     },
-    "python.linting.enabled": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorBlinking": true,
+    "vim.cursorStylePerMode.insert": "line",
     "vim.easymotion": true,
+    "vim.easymotionMarkerFontFamily": "JetBrains Mono",
+    "vim.easymotionMarkerFontSize": "13",
     "vim.hlsearch": true,
     "vim.incsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "after": [
-                "<Esc>"
-            ],
-            "before": [
-                "j",
-                "k"
-            ]
-        }
-    ],
     "vim.leader": "<space>",
-    "vim.useCtrlKeys": true,
-    "window.zoomLevel": 1,
-    "workbench.colorTheme": "Night Owl",
-    "workbench.editor.tabCloseButton": "off",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.statusBar.visible": false
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "vs-minimal"
 }
