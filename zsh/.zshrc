@@ -15,3 +15,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
   # Load pyenv https://github.com/pyenv/pyenv
   eval "$(pyenv init -)"
 fi
+
+
+# Path config for Go
+export GOPATH="${HOME}/Code/go"
+export PATH="${GOPATH}/bin:${PATH}"
