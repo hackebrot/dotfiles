@@ -8,7 +8,6 @@
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
     "explorer.sortOrder": "type",
-    "extensions.ignoreRecommendations": true,
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/*py[cod]": true,
