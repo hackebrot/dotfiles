@@ -27,5 +27,6 @@
     "vim.incsearch": true,
     "vim.leader": "<space>",
     "workbench.colorTheme": "Default Light+",
-    "workbench.iconTheme": "vs-minimal"
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.tree.indent": 16
 }
