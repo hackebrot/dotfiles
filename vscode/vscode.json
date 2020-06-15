@@ -12,6 +12,7 @@
     "files.exclude": {
         "**/*py[cod]": true,
         "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
         "**/.vscode": true,
         "**/__pycache__": true,
         "**/venv": true
