@@ -13,6 +13,7 @@
         "**/*py[cod]": true,
         "**/.mypy_cache": true,
         "**/.pytest_cache": true,
+        "**/.python-version": true,
         "**/.vscode": true,
         "**/__pycache__": true,
         "**/venv": true
