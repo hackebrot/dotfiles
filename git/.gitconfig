@@ -1,3 +1,5 @@
+[core]
+    editor = nvim
 [alias]
     aa = add -A
     an = !git add $(git ls-files -o --exclude-standard)
@@ -26,11 +28,5 @@
     st = status -s
     ty = blame
     uu = fetch -p upstream
-[push]
-    default = simple
-[core]
-    excludesfile = ~/.gitignore
-    editor = nvim
-[credential]
-    helper = osxkeychain
-
+[init]
+    defaultBranch = main
