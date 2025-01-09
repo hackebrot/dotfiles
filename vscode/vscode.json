@@ -15,5 +15,6 @@
     "workbench.preferredLightColorTheme": "GitHub Light Default",
     "workbench.startupEditor": "none",
     "workbench.tree.indent": 16,
-    "vim.smartRelativeLine": true
+    "vim.smartRelativeLine": true,
+    "explorer.excludeGitIgnore": true
 }
