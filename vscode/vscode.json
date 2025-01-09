@@ -3,7 +3,6 @@
     "editor.fontLigatures": true,
     "editor.minimap.enabled": false,
     "editor.scrollBeyondLastLine": false,
-    "explorer.sortOrder": "type",
     "files.autoSave": "onFocusChange",
     "terminal.integrated.cursorBlinking": true,
     "vim.easymotion": true,
