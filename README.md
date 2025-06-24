@@ -1,4 +1,4 @@
 # dotfiles
 
-My configuration files for git, zsh, bash, vscode, nvim etc. 🦊
+My configuration files for alacritty, zsh, git, vscode, nvim etc. 🦊
 
