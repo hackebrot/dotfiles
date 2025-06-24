@@ -36,4 +36,22 @@ require("lazy").setup({
 
   -- Automatically check for plugin updates
   checker = { enabled = true },
+
+  -- Don't require a Nerd Font for icon display
+  ui = {
+    icons = {
+      cmd = "[CMD]",
+      config = "[CONFIG]",
+      event = "[EVENT]",
+      ft = "[FT]",
+      init = "[INIT]",
+      keys = "[KEYS]",
+      plugin = "[PLUGIN]",
+      runtime = "[RUNTIME]",
+      source = "[SRC]",
+      start = "[START]",
+      task = "[TASK]",
+      lazy = "[LAZY]",
+    },
+  },
 })
