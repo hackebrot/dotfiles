@@ -39,3 +39,19 @@ cursor      = "CellForeground" # syntax-cursor-color
 [colors.selection]
 text        = "CellForeground"
 background  = "#bebebe"
+
+# Alacritty key bindings to make Option/Alt+Arrow and Option/Alt+Letter match common Zsh shortcuts
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001bb" # Sends ESC + b (^[b), so Option+Left = backward-word in Zsh
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u001bf" # Sends ESC + f (^[f), so Option+Right = forward-word in Zsh
+
+[[keyboard.bindings]]
+key = "D"
+mods = "Alt"
+chars = "\u001bd" # Sends ESC + d (^[d), so Option+D = kill-word in Zsh
