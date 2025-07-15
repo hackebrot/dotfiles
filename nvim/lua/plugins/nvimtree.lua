@@ -4,6 +4,7 @@ return {
   lazy = false,
   keys = {
     { "<C-n>", ":NvimTreeToggle<CR>", desc = "Toggle NvimTree" },
+    { "<C-r>", ":NvimTreeFindFile<CR>", desc = "Reveal the current file in NvimTree" },
   },
   init = function()
     -- Disable netrw at the very start of your init.lua
