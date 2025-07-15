@@ -7,38 +7,72 @@ bold = { family = "JetBrains Mono", style = "Bold" }
 italic = { family = "JetBrains Mono", style = "Italic" }
 size = 12.0
 
-# Colors - https://github.com/olimorris/onedarkpro.nvim
+# Colors - Customized https://github.com/catppuccin/alacritty/blob/main/catppuccin-frappe.toml
 [colors.primary]
-background  = "#fafafa"
-foreground  = "#6a6a6a"
-
-[colors.normal]
-black       = "#6a6a6a"
-red         = "#e05661"
-green       = "#1da912"
-yellow      = "#eea825"
-blue        = "#118dc3"
-magenta     = "#9a77cf"
-cyan        = "#56b6c2"
-white       = "#fafafa"
-
-[colors.bright]
-black       = "#848484"
-red         = "#e88189"
-green       = "#25d717"
-yellow      = "#f2bb54"
-blue        = "#1caceb"
-magenta     = "#b69ddc"
-cyan        = "#7bc6d0"
-white       = "#ffffff"
+background = "#3a3a3a"
+foreground = "#d2d2d2"
+dim_foreground = "#838ba7"
+bright_foreground = "#d2d2d2"
 
 [colors.cursor]
-text        = "CellBackground"
-cursor      = "CellForeground" # syntax-cursor-color
+text = "#303446"
+cursor = "#f2d5cf"
+
+[colors.vi_mode_cursor]
+text = "#303446"
+cursor = "#babbf1"
+
+[colors.search.matches]
+foreground = "#303446"
+background = "#a5adce"
+
+[colors.search.focused_match]
+foreground = "#303446"
+background = "#a6d189"
+
+[colors.footer_bar]
+foreground = "#303446"
+background = "#a5adce"
+
+[colors.hints.start]
+foreground = "#303446"
+background = "#e5c890"
+
+[colors.hints.end]
+foreground = "#303446"
+background = "#a5adce"
 
 [colors.selection]
-text        = "CellForeground"
-background  = "#bebebe"
+text = "#303446"
+background = "#f2d5cf"
+
+[colors.normal]
+black = "#51576d"
+red = "#e78284"
+green = "#a6d189"
+yellow = "#e5c890"
+blue = "#8caaee"
+magenta = "#f4b8e4"
+cyan = "#81c8be"
+white = "#b5bfe2"
+
+[colors.bright]
+black = "#626880"
+red = "#e78284"
+green = "#a6d189"
+yellow = "#e5c890"
+blue = "#8caaee"
+magenta = "#f4b8e4"
+cyan = "#81c8be"
+white = "#a5adce"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#ef9f76"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#f2d5cf"
 
 # Alacritty key bindings to make Option/Alt+Arrow and Option/Alt+Letter match common Zsh shortcuts
 [[keyboard.bindings]]
