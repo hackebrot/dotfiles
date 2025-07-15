@@ -6,7 +6,7 @@ chmod 600 $HISTFILE
 # Load version control info
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats '%F{reset_color}on %F{28}%b%F{reset_color} '
+zstyle ':vcs_info:git:*' formats '%F{reset_color}on %F{red}%b%F{reset_color} '
 
 # Shell options
 setopt AUTO_CD                   # Change directory without cd
@@ -51,7 +51,7 @@ bindkey '^N' down-line-or-history                  # Ctrl + N: next command
 bindkey '^[d' kill-word                            # Option + D: delete word forward
 
 # Custom prompt with git branch and exit code indicator
-PROMPT='%(?.🐳.😵) %F{111}%n %F{reset_color}at %F{97}%2~ %(?.${vcs_info_msg_0_}.)%F{reset_color}%# '
+PROMPT='%(?.🐳.😵) %F{yellow}%n %F{reset_color}at %F{blue}%2~ %(?.${vcs_info_msg_0_}.)%F{reset_color}%# '
 
 # Config for Go projects
 export GOPATH="${HOME}/Code/go"
