@@ -37,6 +37,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
         -- vim.lsp.util.jump_to_location: See https://github.com/nvim-telescope/telescope.nvim/issues/3469
         vim.keymap.set("n", "<leader>ld", builtin.lsp_definitions, opts("Telescope: Definitions"))
         vim.keymap.set("n", "<leader>lt", builtin.lsp_type_definitions, opts("Telescope: Type Definitions"))
+
+        -- Diagnostics
+        vim.keymap.set("n", "[d", vim.diagnostic.goto_next, opts("Next diagnostic"))
+        vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts("Previous diagnostic"))
     end,
 })
 
