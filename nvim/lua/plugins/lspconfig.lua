@@ -6,6 +6,7 @@ vim.diagnostic.config({
     update_in_insert = false,
 })
 
+
 -- Set up LSP keymaps when any LSP attaches
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -19,7 +20,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts("Go to Implementation"))
         vim.keymap.set("n", "gr", vim.lsp.buf.references, opts("Go to References"))
         vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover Info"))
-        vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts("Signature Help"))
+        vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts("Signature Help"))
+
         vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts("Rename Symbol"))
         vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts("Code Action"))
         vim.keymap.set({ "n" }, "<leader>fmt", function()
