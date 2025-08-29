@@ -143,4 +143,23 @@ return {
             })
         end,
     },
+
+    -- lsp_signature.nvim: Show function signature when you type
+    -- Provides real-time signature help with parameter highlighting
+    {
+        "ray-x/lsp_signature.nvim",
+        event = "VeryLazy",
+        opts = {
+            bind = true,           -- This is mandatory, otherwise border config won't get registered
+            handler_opts = {
+                border = "rounded" -- default is "rounded", but needed for bind = true
+            },
+            hint_enable = false,
+            extra_trigger_chars = { "(", "," }, -- default is {}, this adds extra triggers
+            toggle_key = '<C-k>',               -- default is nil, this enables your keybind toggle
+        },
+        config = function(_, opts)
+            require 'lsp_signature'.setup(opts)
+        end
+    },
 }
