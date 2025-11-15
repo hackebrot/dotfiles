@@ -30,8 +30,18 @@ zstyle ':history:*' timestamp '%F %T'
 # Load Homebrew completions if Homebrew is installed
 if type brew &>/dev/null; then
   HOMEBREW_PREFIX=$(brew --prefix)
-  [[ "$FPATH" != *"$HOMEBREW_PREFIX/share/zsh/site-functions"* ]] && \
-    FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH"
+  BREW_COMPDIR="$HOMEBREW_PREFIX/share/zsh/site-functions"
+  if [[ -d "$BREW_COMPDIR" ]] && (( ${#fpath[(r)$BREW_COMPDIR]} == 0 )); then
+    fpath=("$BREW_COMPDIR" "${fpath[@]}")
+  fi
+fi
+
+# Load Docker completions if Docker is installed
+if type docker &>/dev/null; then
+  DOCKER_COMPDIR="$HOME/.docker/completions"
+  if [[ -d "$DOCKER_COMPDIR" ]] && (( ${#fpath[(r)$DOCKER_COMPDIR]} == 0 )); then
+    fpath=("$DOCKER_COMPDIR" "${fpath[@]}")
+  fi
 fi
 
 # Initialize completion system
