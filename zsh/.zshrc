@@ -68,6 +68,10 @@ bindkey '^X^E' edit-command-line                   # Ctrl + X, Ctrl + E: edit co
 # Custom prompt with git branch and exit code indicator
 PROMPT='%(?.🐳.😵) %F{yellow}%n %F{reset_color}at %F{blue}%2~ %(?.${vcs_info_msg_0_}.)%F{reset_color}%# '
 
+# # Editor configuration
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 # Config for Go projects
 export GOPATH="${HOME}/Code/go"
 export GOBIN="${GOPATH}/bin"
