@@ -48,6 +48,10 @@ fi
 autoload -Uz compinit
 compinit                     # Secure initialization of completion system
 
+# Load the edit-command-line widget
+autoload -Uz edit-command-line
+zle -N edit-command-line
+
 # Key bindings for macOS Terminal
 bindkey '^A' beginning-of-line                     # Ctrl + A: start of line
 bindkey '^E' end-of-line                           # Ctrl + E: end of line
@@ -59,6 +63,7 @@ bindkey '^R' history-incremental-search-backward   # Ctrl + R: reverse search
 bindkey '^P' up-line-or-history                    # Ctrl + P: previous command
 bindkey '^N' down-line-or-history                  # Ctrl + N: next command
 bindkey '^[d' kill-word                            # Option + D: delete word forward
+bindkey '^X^E' edit-command-line                   # Ctrl + X, Ctrl + E: edit command in $EDITOR
 
 # Custom prompt with git branch and exit code indicator
 PROMPT='%(?.🐳.😵) %F{yellow}%n %F{reset_color}at %F{blue}%2~ %(?.${vcs_info_msg_0_}.)%F{reset_color}%# '
