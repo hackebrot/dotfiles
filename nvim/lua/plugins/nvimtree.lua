@@ -43,6 +43,9 @@ return {
                     },
                 },
             },
+            filters = {
+                custom = { ".git" },
+            },
             git = {
                 ignore = true,
             },
