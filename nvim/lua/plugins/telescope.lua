@@ -16,8 +16,16 @@ return {
         local lga_actions = require('telescope-live-grep-args.actions')
         local lga_shortcuts = require('telescope-live-grep-args.shortcuts')
 
+        local open_with_trouble = require("trouble.sources.telescope").open
+
         -- First setup telescope (as recommended in the docs)
         telescope.setup({
+            defaults = {
+                mappings = {
+                    i = { ["<C-q>"] = open_with_trouble },
+                    n = { ["<C-q>"] = open_with_trouble },
+                },
+            },
             extensions = {
                 live_grep_args = {
                     auto_quoting = true, -- Enable auto-quoting
