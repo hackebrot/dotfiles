@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts("Rename Symbol"))
         vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts("Code Action"))
         vim.keymap.set({ "n" }, "<leader>fmt", function()
-            vim.lsp.buf.format { async = true }
+            require("conform").format({ async = true, lsp_format = "fallback" })
         end, opts("Format Code"))
 
         -- Telescope LSP integrations
