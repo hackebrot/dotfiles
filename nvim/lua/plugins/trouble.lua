@@ -2,6 +2,11 @@ return {
     "folke/trouble.nvim",
     cmd = "Trouble",
     opts = {
+        modes = {
+            symbols = {
+                win = { size = 0.3 },
+            },
+        },
         icons = {
             indent = {
                 top           = "| ",
