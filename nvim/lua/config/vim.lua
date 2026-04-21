@@ -48,7 +48,7 @@ vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 
 -- Better buffer handling
-vim.opt.autoread = false
+vim.opt.autoread = true
 vim.opt.updatetime = 100
 
 -- macOS specific
@@ -59,3 +59,38 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
 vim.opt.undofile = true
+
+-- Auto-reload files changed outside Neovim (for Claude Code workflow)
+local reload_interval = 1000
+
+local function check_visible_buffers()
+    if vim.fn.mode() ~= "n" then return end
+
+    local seen = {}
+
+    for _, win in ipairs(vim.api.nvim_list_wins()) do
+        local buf = vim.api.nvim_win_get_buf(win)
+
+        if not seen[buf] then
+            seen[buf] = true
+
+            if vim.bo[buf].buftype == "" then
+                vim.api.nvim_buf_call(buf, function()
+                    vim.cmd("checktime")
+                end)
+            end
+        end
+    end
+end
+
+vim.fn.timer_start(reload_interval, check_visible_buffers, { ["repeat"] = -1 })
+
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+    callback = check_visible_buffers,
+})
+
+vim.api.nvim_create_autocmd("FileChangedShellPost", {
+    callback = function(args)
+        vim.notify("Reloaded: " .. vim.fn.fnamemodify(args.file, ":t"), vim.log.levels.INFO)
+    end,
+})
