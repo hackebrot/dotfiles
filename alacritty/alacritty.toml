@@ -91,3 +91,9 @@ chars = "\u001bf" # Sends ESC + f (^[f), so Option+Right = forward-word in Zsh
 key = "D"
 mods = "Alt"
 chars = "\u001bd" # Sends ESC + d (^[d), so Option+D = kill-word in Zsh
+
+# Claude Code: send ESC+CR on Shift+Enter so it's distinguishable from plain Enter (newline vs. submit)
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
