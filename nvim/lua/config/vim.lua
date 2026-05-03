@@ -14,6 +14,11 @@ vim.opt.laststatus = 3
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+-- Write buffer
+vim.keymap.set('n', '<leader>w', ':write<CR>', { desc = 'Write buffer' })
+vim.keymap.set('n', '<leader>q', ':quit<CR>', { desc = 'Quit window' })
+vim.keymap.set('n', '<leader>wq', ':wq<CR>', { desc = 'Write and quit' })
+
 -- Tab navigation
 vim.keymap.set('n', '<leader>tn', ':tabnext<CR>', { desc = 'Next tab' })
 vim.keymap.set('n', '<leader>tp', ':tabprevious<CR>', { desc = 'Previous tab' })
