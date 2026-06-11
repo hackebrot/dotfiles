@@ -1,0 +1,37 @@
+# Catppuccin Frappe (customized) — dark theme
+
+# Primary
+background = #3a3a3a
+foreground = #d2d2d2
+
+# Cursor
+cursor-color = #f2d5cf
+cursor-text  = #303446
+
+# Selection
+selection-background = #f2d5cf
+selection-foreground = #303446
+
+# Normal colors (0-7)
+palette = 0=#51576d
+palette = 1=#e78284
+palette = 2=#a6d189
+palette = 3=#e5c890
+palette = 4=#8caaee
+palette = 5=#f4b8e4
+palette = 6=#81c8be
+palette = 7=#b5bfe2
+
+# Bright colors (8-15)
+palette = 8=#626880
+palette = 9=#e78284
+palette = 10=#a6d189
+palette = 11=#e5c890
+palette = 12=#8caaee
+palette = 13=#f4b8e4
+palette = 14=#81c8be
+palette = 15=#a5adce
+
+# Extra indexed colors (16-17)
+palette = 16=#ef9f76
+palette = 17=#f2d5cf

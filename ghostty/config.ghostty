@@ -1,0 +1,21 @@
+# Updates
+auto-update = check
+auto-update-channel = stable
+
+# Theme
+theme = dark:frappe-custom,light:Catppuccin Latte
+
+# Font
+font-family = JetBrains Mono
+font-size = 12
+font-thicken = true
+
+# Window
+window-padding-x = 14
+window-padding-y = 14
+
+# macOS titlebar & icon
+macos-icon = blueprint
+macos-titlebar-proxy-icon = hidden
+title = " "
+window-title-font-family = JetBrains Mono
