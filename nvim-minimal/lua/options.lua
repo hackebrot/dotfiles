@@ -15,23 +15,23 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 
 -- Write buffer
-vim.keymap.set('n', '<leader>w', ':write<CR>', { desc = 'Write buffer' })
-vim.keymap.set('n', '<leader>q', ':quit<CR>', { desc = 'Quit window' })
-vim.keymap.set('n', '<leader>x', ':wq<CR>', { desc = 'Write and quit' })
+vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write buffer" })
+vim.keymap.set("n", "<leader>q", ":quit<CR>", { desc = "Quit window" })
+vim.keymap.set("n", "<leader>x", ":wq<CR>", { desc = "Write and quit" })
 
 -- Tab navigation
-vim.keymap.set('n', '<leader>tn', ':tabnext<CR>', { desc = 'Next tab' })
-vim.keymap.set('n', '<leader>tp', ':tabprevious<CR>', { desc = 'Previous tab' })
-vim.keymap.set('n', '<leader>tc', ':tabnew<CR>', { desc = 'Create tab' })
-vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', { desc = 'Close tab' })
+vim.keymap.set("n", "<leader>tn", ":tabnext<CR>", { desc = "Next tab" })
+vim.keymap.set("n", "<leader>tp", ":tabprevious<CR>", { desc = "Previous tab" })
+vim.keymap.set("n", "<leader>tc", ":tabnew<CR>", { desc = "Create tab" })
+vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", { desc = "Close tab" })
 
 -- New keymaps for tab positions
-vim.keymap.set('n', '<leader>t1', '1gt', { desc = 'Go to tab 1' })
-vim.keymap.set('n', '<leader>t2', '2gt', { desc = 'Go to tab 2' })
-vim.keymap.set('n', '<leader>t3', '3gt', { desc = 'Go to tab 3' })
-vim.keymap.set('n', '<leader>t4', '4gt', { desc = 'Go to tab 4' })
-vim.keymap.set('n', '<leader>t5', '5gt', { desc = 'Go to tab 5' })
-vim.keymap.set('n', '<leader>t0', ':tablast<CR>', { desc = 'Go to last tab' })
+vim.keymap.set("n", "<leader>t1", "1gt", { desc = "Go to tab 1" })
+vim.keymap.set("n", "<leader>t2", "2gt", { desc = "Go to tab 2" })
+vim.keymap.set("n", "<leader>t3", "3gt", { desc = "Go to tab 3" })
+vim.keymap.set("n", "<leader>t4", "4gt", { desc = "Go to tab 4" })
+vim.keymap.set("n", "<leader>t5", "5gt", { desc = "Go to tab 5" })
+vim.keymap.set("n", "<leader>t0", ":tablast<CR>", { desc = "Go to last tab" })
 
 -- Search behavior
 vim.opt.ignorecase = true
