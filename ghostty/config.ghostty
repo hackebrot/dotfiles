@@ -19,3 +19,9 @@ macos-icon = blueprint
 macos-titlebar-proxy-icon = hidden
 title = " "
 window-title-font-family = JetBrains Mono
+
+# Keybindings
+# Claude Code: send ESC+CR on Shift+Enter so it's distinguishable from plain
+# Enter (newline vs. submit). Raw bytes pass through tmux untouched, rather than
+# relying on the kitty-protocol path.
+keybind = shift+enter=text:\x1b\r
