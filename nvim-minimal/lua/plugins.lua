@@ -21,7 +21,11 @@ vim.cmd("colorscheme catppuccin-frappe")
 -- Treesitter (parsers installed via nvim-treesitter main branch; highlighting via core)
 local ts_parsers = { "go", "python", "lua", "markdown", "markdown_inline" }
 local ts_filetypes = { "go", "python", "lua", "markdown" }
-require("nvim-treesitter").install(ts_parsers)
+if vim.fn.executable("tree-sitter") == 1 and vim.fn.executable("git") == 1 then
+    require("nvim-treesitter").install(ts_parsers)
+else
+    vim.notify("nvim-treesitter: skipping parser install (need `tree-sitter` and `git`)", vim.log.levels.WARN)
+end
 vim.api.nvim_create_autocmd("FileType", {
     pattern = ts_filetypes,
     callback = function(args)
