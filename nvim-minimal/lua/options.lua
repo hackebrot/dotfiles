@@ -59,7 +59,8 @@ vim.opt.foldlevelstart = 99
 vim.opt.autoread = true
 vim.opt.updatetime = 100
 
--- macOS specific
+-- Keep Neovim's yank register separate from the system clipboard;
+-- use "+y / "+p explicitly when crossing the boundary.
 vim.opt.clipboard = ""
 
 -- Improved backups and undo
