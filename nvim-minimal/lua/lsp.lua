@@ -42,12 +42,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         end
 
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts("Go to Definition"))
-        vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts("Go to Implementation"))
-        vim.keymap.set("n", "gr", vim.lsp.buf.references, opts("Go to References"))
-        vim.keymap.set("n", "K", vim.lsp.buf.hover, opts("Hover Info"))
-        vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts("Signature Help"))
-        vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts("Rename Symbol"))
-        vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts("Code Action"))
+        vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts("Signature Help"))
 
         local fzf = require("fzf-lua")
         vim.keymap.set("n", "<leader>li", fzf.lsp_implementations, opts("Implementations"))
