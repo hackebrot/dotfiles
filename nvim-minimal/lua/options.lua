@@ -37,6 +37,9 @@ vim.keymap.set('n', '<leader>t0', ':tablast<CR>', { desc = 'Go to last tab' })
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Completion menu (native LSP autotrigger)
+vim.opt.completeopt = "menuone,noselect"
+
 -- Indentation and formatting
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
